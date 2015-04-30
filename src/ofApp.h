@@ -1,9 +1,7 @@
 #pragma once
 
-#include "ofxSatellite.h"
 #include "ofMain.h"
-
-using namespace ofx;
+#include "objectSwarm.h"
 
 class ofApp : public ofBaseApp{
 
@@ -28,16 +26,12 @@ class ofApp : public ofBaseApp{
     ofSpherePrimitive earthSphere;
     ofImage colorMap;
     
-    Geo::ElevatedCoordinate myLocation;
-    
-    std::vector<Satellite::Satellite> satellites;
     
     float scaler;
     float rot;
     
     ofEasyCam cam;
     
-    ofMesh debrisMesh;
-    
+    objectSwarm* debris;
 
 };

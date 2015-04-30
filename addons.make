@@ -4,3 +4,5 @@ ofxGeo
 ofxSatellite
 ofxSpatialHash
 ofxTime
+ofxPostProcessing
+ofxBumpShader
