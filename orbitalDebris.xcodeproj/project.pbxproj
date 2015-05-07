@@ -350,7 +350,7 @@
 		E4B69B5B0A3A1756003C02F2 /* orbitalDebrisDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orbitalDebrisDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 30; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -1275,9 +1275,6 @@
 					"$(OF_CORE_HEADERS)",
 					../../../addons/ofxGui/libs,
 					../../../addons/ofxGui/src,
-					../../../addons/ofxSgp/libs,
-					../../../addons/ofxSgp/libs/sgp4sdp4,
-					../../../addons/ofxSgp/src,
 					../../../addons/ofxGeo/libs,
 					../../../addons/ofxGeo/libs/GeographicLib,
 					../../../addons/ofxGeo/libs/GeographicLib/include,
@@ -1316,9 +1313,9 @@
 					../../../addons/ofxTime/src,
 					../../../addons/ofxPostProcessing/libs,
 					../../../addons/ofxPostProcessing/src,
-					src,
 					../../../addons/ofxBumpShader/libs,
 					../../../addons/ofxBumpShader/src,
+					src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -1355,9 +1352,6 @@
 					"$(OF_CORE_HEADERS)",
 					../../../addons/ofxGui/libs,
 					../../../addons/ofxGui/src,
-					../../../addons/ofxSgp/libs,
-					../../../addons/ofxSgp/libs/sgp4sdp4,
-					../../../addons/ofxSgp/src,
 					../../../addons/ofxGeo/libs,
 					../../../addons/ofxGeo/libs/GeographicLib,
 					../../../addons/ofxGeo/libs/GeographicLib/include,
@@ -1396,9 +1390,9 @@
 					../../../addons/ofxTime/src,
 					../../../addons/ofxPostProcessing/libs,
 					../../../addons/ofxPostProcessing/src,
-					src,
 					../../../addons/ofxBumpShader/libs,
 					../../../addons/ofxBumpShader/src,
+					src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (

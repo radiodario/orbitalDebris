@@ -1,5 +1,4 @@
 ofxGui
-ofxSgp
 ofxGeo
 ofxSatellite
 ofxSpatialHash

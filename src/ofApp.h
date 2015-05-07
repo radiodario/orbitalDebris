@@ -1,7 +1,9 @@
 #pragma once
 
+
 #include "ofMain.h"
 #include "objectSwarm.h"
+
 
 class ofApp : public ofBaseApp{
 
@@ -24,8 +26,20 @@ class ofApp : public ofBaseApp{
     private:
     
     ofSpherePrimitive earthSphere;
-    ofImage colorMap;
+    ofSpherePrimitive cloudsSphere;
     
+    ofImage textureMapImage;
+    ofImage normalMapImage;
+    ofImage specularMapImage;
+    ofImage cloudsMapImage;
+    
+    
+    ofTexture textureMap;
+    ofTexture normalMap;
+    ofTexture specularMap;
+    ofTexture cloudsMap;
+    
+    ofShader shader;
     
     float scaler;
     float rot;

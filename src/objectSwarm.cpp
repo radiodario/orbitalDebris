@@ -69,14 +69,11 @@ void objectSwarm::update(Poco::DateTime moment) {
 
 void objectSwarm::draw() {
 //    ofEnablePointSprites();
+    glPointSize(3.);
 //    pTexture.getTextureReference().bind();
     ofPushStyle();
     ofSetColor(colour);
     objectMesh.draw();
     ofPopStyle();
-
-    
-    
-    
 //    ofDisablePointSprites();
 }
