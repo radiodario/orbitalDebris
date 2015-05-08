@@ -3,7 +3,8 @@
 
 #include "ofMain.h"
 #include "objectSwarm.h"
-
+#include "ofxCenteredTrueTypeFont.h"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -11,7 +12,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
-
+        void drawGui();
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -21,31 +22,60 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
+        void setToExplosionTimePressed();
+        void setToCurrentTimePressed();
     
     private:
     
-    ofSpherePrimitive earthSphere;
-    ofSpherePrimitive cloudsSphere;
+        void setupLights();
+        void loadDebrises();
+        void setupGui();
     
-    ofImage textureMapImage;
-    ofImage normalMapImage;
-    ofImage specularMapImage;
-    ofImage cloudsMapImage;
+        ofxCenteredTrueTypeFont titleFont;
+        ofTrueTypeFont dateFont;
     
+        ofSpherePrimitive earthSphere;
+        ofSpherePrimitive cloudsSphere;
+        
+        ofImage textureMapImage;
+        ofImage normalMapImage;
+        ofImage specularMapImage;
+        ofImage cloudsMapImage;
     
-    ofTexture textureMap;
-    ofTexture normalMap;
-    ofTexture specularMap;
-    ofTexture cloudsMap;
+        ofTexture textureMap;
+        ofTexture normalMap;
+        ofTexture specularMap;
+        ofTexture cloudsMap;
+        
+        ofShader shader;
+        
+        float scaler;
+        float rot;
     
-    ofShader shader;
+        bool bHide;
     
-    float scaler;
-    float rot;
+        ofEasyCam cam;
+        
+        objectSwarm* debris;
     
-    ofEasyCam cam;
+        ofDirectory tleFiles;
+        std::vector<objectSwarm*> debrises;
     
-    objectSwarm* debris;
+        Poco::DateTime current;
+        Poco::DateTime explosionTime;
+        Poco::DateTime last;
+    
+        // gui stuff
+        ofxPanel gui;
+    
+        ofxToggle drawText;
+        ofxToggle drawDate;
+        ofxToggle drawFps;
+        ofxToggle rotateScene;
+        ofxFloatSlider rotationSpeed;
+        ofxFloatSlider timeSpeed;
+    
+        ofxButton setToExplosionTime;
+        ofxButton setToCurrentTime;
 
 };

@@ -280,6 +280,7 @@
 		9CD816E4BB7C54734CB15092 /* Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Util.h; path = ../../../addons/ofxSatellite/libs/libsgp4/Util.h; sourceTree = SOURCE_ROOT; };
 		A02F6AE9937FBEA7EE78DD4C /* UTMUPS.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UTMUPS.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/UTMUPS.hpp; sourceTree = SOURCE_ROOT; };
 		A1473352A9F69ADEBA7D7DF5 /* CassiniSoldner.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CassiniSoldner.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/CassiniSoldner.hpp; sourceTree = SOURCE_ROOT; };
+		A3B189BC1AFCF07200B2FA5A /* ofxCenteredTrueTypeFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCenteredTrueTypeFont.h; sourceTree = "<group>"; };
 		A551A63C96F598937AC720F1 /* OrbitalElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OrbitalElements.h; path = ../../../addons/ofxSatellite/libs/libsgp4/OrbitalElements.h; sourceTree = SOURCE_ROOT; };
 		A907241C60BAF3A70633D1A2 /* Math.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Math.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/Math.hpp; sourceTree = SOURCE_ROOT; };
 		AA203E8E5A958F9BA46F6478 /* CoordGeodetic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = CoordGeodetic.cpp; path = ../../../addons/ofxSatellite/libs/libsgp4/CoordGeodetic.cpp; sourceTree = SOURCE_ROOT; };
@@ -986,6 +987,7 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				431F4292EC184BFE7739E784 /* objectSwarm.cpp */,
 				4EE18035BB53E25EAE08ACC5 /* objectSwarm.h */,
+				A3B189BC1AFCF07200B2FA5A /* ofxCenteredTrueTypeFont.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
