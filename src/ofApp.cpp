@@ -13,6 +13,9 @@ void ofApp::setup(){
     string texture = "earth-ud";
     
 
+    // syphon setup
+    //outputServer.setName("Orbital Debris");
+    
     
     // load & allocate texture map
     textureMapImage.loadImage(texture +"-texture.jpg");
@@ -50,7 +53,7 @@ void ofApp::setup(){
     
     loadDebrises();
     
-    cam.setPosition(0, 0, 0);
+    cam.lookAt(ofVec3f(0.0f, 0.0f, 0.0f));
     
     Poco::DateTime now;
     current = now;
@@ -61,8 +64,11 @@ void ofApp::setup(){
     titleFont.loadFont("Brown-Regular.ttf", 60);
     dateFont.loadFont("inputMono.ttf", 18);
     
+
     setupLights();
     setupGui();
+    setupAnimatables();
+    
 }
 
 //--------------------------------------------------------------
@@ -71,6 +77,8 @@ void ofApp::update(){
     Poco::DateTime now;
     // create a time span
     Poco::Timespan diff(((now - last).totalMilliseconds() * timeSpeed)*Poco::Timespan::MILLISECONDS);
+    
+    
     
     current += diff;
     
@@ -84,6 +92,15 @@ void ofApp::update(){
         debrises[i]->update(current);
     }
     
+    if (autoPilot) {
+        // update animatables
+        float dt = 1.0f / ofGetFrameRate();
+        titleColor.update(dt);
+        zPosition.update(dt);
+        yPosition.update(dt);
+        cam.lookAt(ofVec3f(0.f, 0.f, 0.f));
+        cam.setPosition(0, yPosition, zPosition);
+    }
 }
 
 //--------------------------------------------------------------
@@ -123,11 +140,32 @@ void ofApp::draw(){
         debrises[i]->draw();
     }
     
+//    ofPushMatrix();
+//    ofRotate(90, 1, 0, 0);
+//    ofPushStyle();
+//    ofNoFill();
+//    ofSetColor(200, 100, 250);
+//    ofSetCircleResolution(100);
+//    ofCircle(0, 0, 0, 42164);
+//    ofPushMatrix();
+//    ofTranslate(42164, 0, 0);
+//    ofLine(0, 0, 0, 2000, 4000, 0);
+//    ofLine(2000, 4000, 0, 4000, 4000, 0);
+//    ofPushMatrix();
+//    ofTranslate(4000, 4000, 0);
+//    ofDrawBitmapString("Geostationary Orbit (42164km)", 0, 0);
+//    ofPopMatrix();
+//    ofPopMatrix();
+//    ofPopStyle();
+//    ofPopMatrix();
+//
+    
     ofPopMatrix();
     
     cam.end();
     glDisable(GL_DEPTH_TEST);
     
+    //outputServer.publishScreen();
     
     drawGui();
     
@@ -136,14 +174,34 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::loadDebrises() {
 
-    tleFiles.listDir("tle");
+    tleFiles.listDir("tle3");
     
     std::cout << "loading " << tleFiles.size() << " files" << endl;
     for (int i = 0; i < tleFiles.size(); i++) {
         string path = tleFiles.getPath(i);
         ofLogNotice(tleFiles.getPath(i));
+//        debrises.push_back(new objectSwarm(path, ofColor(128 + 128/tleFiles.size() * i, 255/tleFiles.size() * i, 255 -(255/tleFiles.size() * i))));
         debrises.push_back(new objectSwarm(path, ofColor(255)));
     }
+}
+
+//--------------------------------------------------------------
+void ofApp::setupAnimatables() {
+    titleColor.setColor(ofColor(255, 0));
+    titleColor.setDuration(100.0f);
+    titleColor.setRepeatType(LOOP_BACK_AND_FORTH);
+    titleColor.setCurve(VERY_LATE_EASE_IN_EASE_OUT);
+    titleColor.animateTo(ofColor(255, 255));
+    
+    zPosition.setCurve(EASE_IN_EASE_OUT);
+    zPosition.setDuration(75.0f);
+    zPosition.setRepeatType(LOOP_BACK_AND_FORTH);
+    zPosition.animateFromTo(4000, 250);
+    
+    yPosition.setDuration(180.f);
+    yPosition.setRepeatType(LOOP_BACK_AND_FORTH);
+    yPosition.setCurve(EASE_IN_EASE_OUT);
+    yPosition.animateFromTo(-1000, 1000);
 }
 
 //--------------------------------------------------------------
@@ -151,10 +209,18 @@ void ofApp::drawGui() {
     ofPushStyle();
     ofSetColor(255);
     if (drawText) {
-        titleFont.drawStringCentered("ORBITAL DEBRIS", ofGetWidth()/2, ofGetHeight()/2);
+        ofPushStyle();
+        titleColor.applyCurrentColor();
+//        titleFont.drawStringCentered("ORBITAL DEBRIS", ofGetWidth()/2, ofGetHeight()/2);
+        titleFont.drawStringCentered("ORBITAL DEBRIS", ofGetWidth()/2, 100);
+        ofPopStyle();
     }
-
+    
     if (drawDate) {
+        std::stringstream timeCompressionStr;
+        timeCompressionStr << "Time Compression: " << timeSpeed << "x";
+        dateFont.drawString(timeCompressionStr.str(), 20, ofGetHeight() - 60);
+
         string formatedTime = Poco::DateTimeFormatter::format(current, Poco::DateTimeFormat::ASCTIME_FORMAT);
         dateFont.drawString(formatedTime, 20, ofGetHeight() - 30);
     }
@@ -215,16 +281,20 @@ void ofApp::setupGui() {
     setToCurrentTime.addListener(this, &ofApp::setToCurrentTimePressed);
     
     ofxGuiSetFont("guiFont.ttf", 10);
-    bHide = false;
+    bHide = true;
     gui.setup();
     gui.add(drawText.setup("Show Title", true));
     gui.add(drawDate.setup("Show Date", true));
     gui.add(drawFps.setup("Show Framerate", false));
     gui.add(rotateScene.setup("Rotate Scene", true));
     gui.add(rotationSpeed.setup("Rotation speed", 10, 0, 100));
-    gui.add(timeSpeed.setup("Time Compression", 1, 1, 1000));
+    gui.add(timeSpeed.setup("Time Compression", 10, 1, 10000));
     gui.add(setToExplosionTime.setup("Set Fengyun 1C exp."));
     gui.add(setToCurrentTime.setup("Set current time"));
+    gui.add(autoPilot.setup("Autopilot", true));
+ 
+    debrisToggle.setup();
+    
     
 }
 

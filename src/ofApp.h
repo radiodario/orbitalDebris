@@ -5,6 +5,9 @@
 #include "objectSwarm.h"
 #include "ofxCenteredTrueTypeFont.h"
 #include "ofxGui.h"
+#include "ofxAnimatableOfColor.h"
+#include "ofxAnimatableFloat.h"
+//#include "ofxSyphon.h"
 
 class ofApp : public ofBaseApp{
 
@@ -30,6 +33,7 @@ class ofApp : public ofBaseApp{
         void setupLights();
         void loadDebrises();
         void setupGui();
+        void setupAnimatables();
     
         ofxCenteredTrueTypeFont titleFont;
         ofTrueTypeFont dateFont;
@@ -54,6 +58,12 @@ class ofApp : public ofBaseApp{
     
         bool bHide;
     
+        //ofxSyphonServer outputServer;
+    
+        ofxAnimatableOfColor titleColor;
+        ofxAnimatableFloat zPosition;
+        ofxAnimatableFloat yPosition;
+    
         ofEasyCam cam;
         
         objectSwarm* debris;
@@ -72,8 +82,11 @@ class ofApp : public ofBaseApp{
         ofxToggle drawDate;
         ofxToggle drawFps;
         ofxToggle rotateScene;
+        ofxToggle autoPilot;
         ofxFloatSlider rotationSpeed;
         ofxFloatSlider timeSpeed;
+    
+        ofxPanel debrisToggle;
     
         ofxButton setToExplosionTime;
         ofxButton setToCurrentTime;

@@ -15,9 +15,11 @@
 		08CD2256307B048A8152D1C6 /* CoordinateBounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 699D60A62BCFD7B740FF0B62 /* CoordinateBounds.cpp */; };
 		0D6BEA7B8AF78513DC822F28 /* GeodesicLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD56547531EE2C982A13FCB5 /* GeodesicLine.cpp */; };
 		114C00B13F753E59BB0984BB /* DofPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E837DEBFAEA1CAD833A377DF /* DofPass.cpp */; };
+		11DF9AB1B4EAA63E3B190CA0 /* ofxSyphonServerDirectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = E723BEF4C55D236E24639608 /* ofxSyphonServerDirectory.mm */; };
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		1E615236D6D182DED6C8A8B2 /* RenderPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54F36382628E4D0FF07206D7 /* RenderPass.cpp */; };
 		1F122C94015B73A1AA4AA430 /* SolarPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11ADC71C2EECEB617585F80F /* SolarPosition.cpp */; };
+		1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03EA4DA95B5E1B8409FC058E /* ofxSyphonClient.mm */; };
 		21D5B299E31341B5D655EA6E /* CoordGeodetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA203E8E5A958F9BA46F6478 /* CoordGeodetic.cpp */; };
 		265BAB017954B6CC1D2A3D78 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89474D2EA08F16FBC6AE438B /* Observer.cpp */; };
 		28AFD6FA9B9C885AFD9FF1C7 /* HorizontalTiltShifPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF7EF26FE0FF19EA6D9419D /* HorizontalTiltShifPass.cpp */; };
@@ -37,14 +39,17 @@
 		4D81191B49715B34C8FA6549 /* Globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B029979AAB04E790310C1A74 /* Globals.cpp */; };
 		508D5ECDA7FAFF379F58128A /* ofVec2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF63913175ED4525AE4D309E /* ofVec2d.cpp */; };
 		50DE26627BFC67DBB2B0D4B4 /* Geoid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C12A742310031AFEA1AEE /* Geoid.cpp */; };
+		52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7CFEE77982205D3F1496C03 /* ofxAnimatable.cpp */; };
 		532AF6D7E3CB5AE24D160140 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44FF7F4131BDB1710CF68AA4 /* Utils.cpp */; };
 		5623BA6346DC550F88F4D072 /* Rhumb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 281CADCEFDDC06C4CEA54C16 /* Rhumb.cpp */; };
 		5847AA7C8B6171D9FE1CC8D5 /* Period.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE9C89F270782B85763A3554 /* Period.cpp */; };
 		5B281281743ABE4E9F387E84 /* CassiniSoldner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92F650A7527BDBA3737CD778 /* CassiniSoldner.cpp */; };
 		5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C88333E71C9457E441C33474 /* ofxButton.cpp */; };
+		5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */; };
 		651DE076CC112B6101E5C2BC /* Satellite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BECB5A155F6BAA3BEA761DF /* Satellite.cpp */; };
 		6A505EAE8088949A9180FFE7 /* GodRaysPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C07AAE715D8853EDA76BC909 /* GodRaysPass.cpp */; };
 		7108E3254AF88DAEC0624230 /* Ellipsoid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 283CB2BBC4779E71825E7947 /* Ellipsoid.cpp */; };
+		74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777D89F9EECAC3FE2405D5D1 /* ofxAnimatableOfColor.cpp */; };
 		75680DD78047C04373769C5B /* Coordinate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46170C7AD3127D015F025A03 /* Coordinate.cpp */; };
 		7701602118C70C10291E49C8 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F615CEE50F03C98EE5F0999 /* Utils.cpp */; };
 		778DCA6792476E5B9F57F175 /* ConvolutionPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AACD9661AF21261E24A05A4 /* ConvolutionPass.cpp */; };
@@ -65,10 +70,14 @@
 		8919DBC6E0DCFC437DCFFB90 /* DateTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0EBAD6CF2AF6AD79BE06442 /* DateTime.cpp */; };
 		898CB0955CB42FEB5D750A5C /* VerticalTiltShifPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B73DCDAF417A486A343EF /* VerticalTiltShifPass.cpp */; };
 		8D5F19EBD8346746AE55E39B /* Eci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFF9E78844130870C9759E8A /* Eci.cpp */; };
+		8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32D6F27DC6308427F9A278C1 /* ofxSyphonServer.mm */; };
 		90394B76928F4E40167A3536 /* UTMUPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47732C7034CF3929428BA6B1 /* UTMUPS.cpp */; };
 		929AECB71883296976F4BC83 /* TimeSpan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B6A6AA7C61FCBD6A41FFF2 /* TimeSpan.cpp */; };
 		9D2002DCCA863F80989626BD /* ofVec4d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD30986094675C81ABB2D2BB /* ofVec4d.cpp */; };
 		9EC4A63B79CED3FB1FE94705 /* MagneticCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32952154FBB4CA4E83AA14F8 /* MagneticCircle.cpp */; };
+		A3804FDE1B0A767B003A2131 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
+		A3804FE01B0A7751003A2131 /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A3804FDF1B0A7751003A2131 /* SyphonNameboundClient.m */; };
+		A3804FE11B0A77A3003A2131 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3F8ACF196A159405FD9660A /* objectSwarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431F4292EC184BFE7739E784 /* objectSwarm.cpp */; };
 		A45AE417DC366D2319D3A192 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E0F24878474A4AEE71D50A /* Vector.cpp */; };
 		A5C693A7ACC97A9E70F94200 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3841F040369B6F65ABA7CE80 /* Util.cpp */; };
@@ -82,6 +91,7 @@
 		B7C3B391BB7D1ABE564A2678 /* Geodesic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73C30D181818A072BC6AB3D2 /* Geodesic.cpp */; };
 		B951AAE35209993B4E399E77 /* PixelatePass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7462D018F6D6E407E598A021 /* PixelatePass.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		BC054B7D3B48B395B1D87F2E /* ofxAnimatableOfPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 904CD301F7BB14F91235B2E8 /* ofxAnimatableOfPoint.cpp */; };
 		BE5ED1FDB18D5092CF3AACA0 /* PostProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 484F662699DFE8176E1B750F /* PostProcessing.cpp */; };
 		C17F077E9A84ADD14323C2C2 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE6644E5C3F92E27F8E97 /* Utility.cpp */; };
 		C74EB54F9C2C709BFF0A9456 /* AlbersEqualArea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB141FFB43D43EC961B869B /* AlbersEqualArea.cpp */; };
@@ -93,6 +103,7 @@
 		D752EB8BA905C25F5E7F2B30 /* ZoomBlurPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF8D27B3DEDC121DE85F5B7B /* ZoomBlurPass.cpp */; };
 		DD1921BB4716E9BB22A3B863 /* EllipticFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B4681DE1C0ADB98E96B6C /* EllipticFunction.cpp */; };
 		DFB75F1EBE744A456AC999F4 /* ContrastPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6788311DC7D945282047837A /* ContrastPass.cpp */; };
+		E2264978BB6BCC634F6422C4 /* ofxBumpShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 500265DA157B1C9756521C28 /* ofxBumpShader.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -146,6 +157,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A3804FE11B0A77A3003A2131 /* Syphon.framework in CopyFiles */,
 				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +166,9 @@
 
 /* Begin PBXFileReference section */
 		00844683848CEC50AFF05062 /* Geocentric.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Geocentric.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/Geocentric.hpp; sourceTree = SOURCE_ROOT; };
+		01FAC3552E00C3620035EA2F /* ofxSyphonClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSyphonClient.h; path = ../../../addons/ofxSyphon/src/ofxSyphonClient.h; sourceTree = SOURCE_ROOT; };
 		0217829E621698E1FD8D9876 /* EdgePass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EdgePass.h; path = ../../../addons/ofxPostProcessing/src/EdgePass.h; sourceTree = SOURCE_ROOT; };
+		03EA4DA95B5E1B8409FC058E /* ofxSyphonClient.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxSyphonClient.mm; path = ../../../addons/ofxSyphon/src/ofxSyphonClient.mm; sourceTree = SOURCE_ROOT; };
 		044D4B2A1A607F88FEF2B610 /* ConvolutionPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ConvolutionPass.h; path = ../../../addons/ofxPostProcessing/src/ConvolutionPass.h; sourceTree = SOURCE_ROOT; };
 		0453A7C309E8AE8F8C1CC6E8 /* DofPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DofPass.h; path = ../../../addons/ofxPostProcessing/src/DofPass.h; sourceTree = SOURCE_ROOT; };
 		04B9F3F2BF4A46C7ECA00532 /* GeodesicLineExact.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GeodesicLineExact.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/GeodesicLineExact.hpp; sourceTree = SOURCE_ROOT; };
@@ -169,6 +183,7 @@
 		0D1E14F8FA34E08DDF3377CA /* LocalCartesian.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LocalCartesian.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/LocalCartesian.hpp; sourceTree = SOURCE_ROOT; };
 		0D811F3E1817C17351F97CCF /* BleachBypassPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BleachBypassPass.h; path = ../../../addons/ofxPostProcessing/src/BleachBypassPass.h; sourceTree = SOURCE_ROOT; };
 		0F304B76D020460D46C85EA8 /* ofxSatellite.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSatellite.h; path = ../../../addons/ofxSatellite/src/ofxSatellite.h; sourceTree = SOURCE_ROOT; };
+		0FB83AC7747296DD35C1C295 /* ofxSyphon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSyphon.h; path = ../../../addons/ofxSyphon/src/ofxSyphon.h; sourceTree = SOURCE_ROOT; };
 		108C4DB0C398388D00027091 /* KaleidoscopePass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = KaleidoscopePass.cpp; path = ../../../addons/ofxPostProcessing/src/KaleidoscopePass.cpp; sourceTree = SOURCE_ROOT; };
 		11ADC71C2EECEB617585F80F /* SolarPosition.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SolarPosition.cpp; path = ../../../addons/ofxSatellite/libs/libsgp4/SolarPosition.cpp; sourceTree = SOURCE_ROOT; };
 		14F8B4286F653202B881D865 /* ToonPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ToonPass.h; path = ../../../addons/ofxPostProcessing/src/ToonPass.h; sourceTree = SOURCE_ROOT; };
@@ -176,6 +191,7 @@
 		17E65988300FBD9AAA2CD0CA /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../../addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
 		18FC75E8EB57EC9BCCAB61F5 /* UTMLocationBounds.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UTMLocationBounds.h; path = ../../../addons/ofxGeo/libs/ofxGeo/include/ofx/Geo/UTMLocationBounds.h; sourceTree = SOURCE_ROOT; };
 		1C0DA2561397A7DE0246858B /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
+		1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableFloat.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.cpp; sourceTree = SOURCE_ROOT; };
 		20FB8575A0E389E653DC3ED7 /* GeodesicExactC4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GeodesicExactC4.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/GeodesicExactC4.cpp; sourceTree = SOURCE_ROOT; };
 		248BA08A9DDB0D95A61EA32F /* Geohash.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Geohash.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/Geohash.hpp; sourceTree = SOURCE_ROOT; };
 		25368D99F0A2FE184C99FFD0 /* PolarStereographic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PolarStereographic.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/PolarStereographic.cpp; sourceTree = SOURCE_ROOT; };
@@ -193,8 +209,12 @@
 		30CCE22F6B640E27D09D5B8C /* Geocentric.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Geocentric.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/Geocentric.cpp; sourceTree = SOURCE_ROOT; };
 		310B1991C6B0F698CA319347 /* CircularEngine.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CircularEngine.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/CircularEngine.hpp; sourceTree = SOURCE_ROOT; };
 		3225C5826B6E61472C508C84 /* SGP4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SGP4.cpp; path = ../../../addons/ofxSatellite/libs/libsgp4/SGP4.cpp; sourceTree = SOURCE_ROOT; };
+		3252684B51C2D2D9C7749C7A /* ofxCenteredTrueTypeFont.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCenteredTrueTypeFont.h; path = src/ofxCenteredTrueTypeFont.h; sourceTree = SOURCE_ROOT; };
 		32952154FBB4CA4E83AA14F8 /* MagneticCircle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MagneticCircle.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/MagneticCircle.cpp; sourceTree = SOURCE_ROOT; };
+		32D6F27DC6308427F9A278C1 /* ofxSyphonServer.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxSyphonServer.mm; path = ../../../addons/ofxSyphon/src/ofxSyphonServer.mm; sourceTree = SOURCE_ROOT; };
+		337B812806A0E7D26A029E5A /* ofxSyphonServerDirectory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSyphonServerDirectory.h; path = ../../../addons/ofxSyphon/src/ofxSyphonServerDirectory.h; sourceTree = SOURCE_ROOT; };
 		350E271C505B757CEDFDCE79 /* GeodesicExact.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GeodesicExact.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/GeodesicExact.hpp; sourceTree = SOURCE_ROOT; };
+		36B9B6CD565C4C6A5BE96680 /* ofxAnimatable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatable.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatable.h; sourceTree = SOURCE_ROOT; };
 		3841F040369B6F65ABA7CE80 /* Util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Util.cpp; path = ../../../addons/ofxSatellite/libs/libsgp4/Util.cpp; sourceTree = SOURCE_ROOT; };
 		38ACE6644E5C3F92E27F8E97 /* Utility.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Utility.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/Utility.cpp; sourceTree = SOURCE_ROOT; };
 		3AACD9661AF21261E24A05A4 /* ConvolutionPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ConvolutionPass.cpp; path = ../../../addons/ofxPostProcessing/src/ConvolutionPass.cpp; sourceTree = SOURCE_ROOT; };
@@ -213,6 +233,7 @@
 		45A6F865978C720C3490839B /* LocalCartesian.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = LocalCartesian.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/LocalCartesian.cpp; sourceTree = SOURCE_ROOT; };
 		46170C7AD3127D015F025A03 /* Coordinate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Coordinate.cpp; path = ../../../addons/ofxGeo/libs/ofxGeo/src/Coordinate.cpp; sourceTree = SOURCE_ROOT; };
 		46B8F6B7B58C13CAFFBC35BF /* UTMLocation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UTMLocation.h; path = ../../../addons/ofxGeo/libs/ofxGeo/include/ofx/Geo/UTMLocation.h; sourceTree = SOURCE_ROOT; };
+		46BBCC26D60B589958BF0D03 /* ofxSyphonServer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSyphonServer.h; path = ../../../addons/ofxSyphon/src/ofxSyphonServer.h; sourceTree = SOURCE_ROOT; };
 		47732C7034CF3929428BA6B1 /* UTMUPS.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = UTMUPS.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/UTMUPS.cpp; sourceTree = SOURCE_ROOT; };
 		484F662699DFE8176E1B750F /* PostProcessing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PostProcessing.cpp; path = ../../../addons/ofxPostProcessing/src/PostProcessing.cpp; sourceTree = SOURCE_ROOT; };
 		48E4AC9F455A87F0448C70B2 /* ofxPostProcessing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPostProcessing.h; path = ../../../addons/ofxPostProcessing/src/ofxPostProcessing.h; sourceTree = SOURCE_ROOT; };
@@ -223,6 +244,7 @@
 		4D4048CFB999A7E054968D4E /* SphericalEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SphericalEngine.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/SphericalEngine.cpp; sourceTree = SOURCE_ROOT; };
 		4EE18035BB53E25EAE08ACC5 /* objectSwarm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = objectSwarm.h; path = src/objectSwarm.h; sourceTree = SOURCE_ROOT; };
 		4FB141FFB43D43EC961B869B /* AlbersEqualArea.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AlbersEqualArea.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/AlbersEqualArea.cpp; sourceTree = SOURCE_ROOT; };
+		500265DA157B1C9756521C28 /* ofxBumpShader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBumpShader.cpp; path = ../../../addons/ofxBumpShader/src/ofxBumpShader.cpp; sourceTree = SOURCE_ROOT; };
 		50800DAB6C4B18E4F92166FC /* KaleidoscopePass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = KaleidoscopePass.h; path = ../../../addons/ofxPostProcessing/src/KaleidoscopePass.h; sourceTree = SOURCE_ROOT; };
 		5201F6A7A19258B7F1CA2E43 /* RGBShiftPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RGBShiftPass.cpp; path = ../../../addons/ofxPostProcessing/src/RGBShiftPass.cpp; sourceTree = SOURCE_ROOT; };
 		52AFA1F08C420992CAAAE648 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSlider.h; path = ../../../addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
@@ -230,9 +252,11 @@
 		54F36382628E4D0FF07206D7 /* RenderPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RenderPass.cpp; path = ../../../addons/ofxPostProcessing/src/RenderPass.cpp; sourceTree = SOURCE_ROOT; };
 		563D4C03051EA34B23647BF0 /* GeoCoords.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GeoCoords.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/GeoCoords.hpp; sourceTree = SOURCE_ROOT; };
 		57AC19537D7E9DC0B7F69F97 /* UTMLocationBounds.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = UTMLocationBounds.cpp; path = ../../../addons/ofxGeo/libs/ofxGeo/src/UTMLocationBounds.cpp; sourceTree = SOURCE_ROOT; };
+		5A6936A5770BEB310F3826AD /* ofxAnimatableOfColor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableOfColor.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfColor.h; sourceTree = SOURCE_ROOT; };
 		5BC56A60E911F7488A58830A /* NoiseWarpPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = NoiseWarpPass.cpp; path = ../../../addons/ofxPostProcessing/src/NoiseWarpPass.cpp; sourceTree = SOURCE_ROOT; };
 		5EBA84663EF1276A176A39D6 /* Tle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Tle.h; path = ../../../addons/ofxSatellite/libs/libsgp4/Tle.h; sourceTree = SOURCE_ROOT; };
 		5F6931D9BB7854E7A83B96B6 /* AzimuthalEquidistant.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AzimuthalEquidistant.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/AzimuthalEquidistant.cpp; sourceTree = SOURCE_ROOT; };
+		5FCA34E402E9C3A0C48F9FA9 /* ofxAnimatableOfPoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableOfPoint.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfPoint.h; sourceTree = SOURCE_ROOT; };
 		604BB71B812E172AD8FA62C9 /* UTMLocation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = UTMLocation.cpp; path = ../../../addons/ofxGeo/libs/ofxGeo/src/UTMLocation.cpp; sourceTree = SOURCE_ROOT; };
 		60BCE7B58003129DEDF48445 /* GeodesicExact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GeodesicExact.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/GeodesicExact.cpp; sourceTree = SOURCE_ROOT; };
 		60E0F24878474A4AEE71D50A /* Vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Vector.cpp; path = ../../../addons/ofxSatellite/libs/libsgp4/Vector.cpp; sourceTree = SOURCE_ROOT; };
@@ -244,11 +268,14 @@
 		699D60A62BCFD7B740FF0B62 /* CoordinateBounds.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = CoordinateBounds.cpp; path = ../../../addons/ofxGeo/libs/ofxGeo/src/CoordinateBounds.cpp; sourceTree = SOURCE_ROOT; };
 		6AF187A99EECFB13E3BCCD33 /* LimbDarkeningPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LimbDarkeningPass.h; path = ../../../addons/ofxPostProcessing/src/LimbDarkeningPass.h; sourceTree = SOURCE_ROOT; };
 		6BBE5C9251660EA96B398017 /* SSAOPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SSAOPass.h; path = ../../../addons/ofxPostProcessing/src/SSAOPass.h; sourceTree = SOURCE_ROOT; };
+		6C6A6CF2AD309C3B58922071 /* ofxAnimatableFloat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableFloat.h; path = ../../../addons/ofxAnimatable/src/ofxAnimatableFloat.h; sourceTree = SOURCE_ROOT; };
+		71FFD50EA75BCC76F0C58D12 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SyphonNameboundClient.h; path = ../../../addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		73C30D181818A072BC6AB3D2 /* Geodesic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Geodesic.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/Geodesic.cpp; sourceTree = SOURCE_ROOT; };
 		7462D018F6D6E407E598A021 /* PixelatePass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PixelatePass.cpp; path = ../../../addons/ofxPostProcessing/src/PixelatePass.cpp; sourceTree = SOURCE_ROOT; };
 		74BDDD14F49833AD24862E87 /* RimHighlightingPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RimHighlightingPass.cpp; path = ../../../addons/ofxPostProcessing/src/RimHighlightingPass.cpp; sourceTree = SOURCE_ROOT; };
 		75EC6BFAB43D69C49CA2FA7E /* DateTime.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DateTime.h; path = ../../../addons/ofxSatellite/libs/libsgp4/DateTime.h; sourceTree = SOURCE_ROOT; };
 		76302142A58CDB4BB680287B /* Geodesic.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Geodesic.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/Geodesic.hpp; sourceTree = SOURCE_ROOT; };
+		777D89F9EECAC3FE2405D5D1 /* ofxAnimatableOfColor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableOfColor.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfColor.cpp; sourceTree = SOURCE_ROOT; };
 		78D67A00EB899FAC09430597 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLabel.cpp; path = ../../../addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
 		78E73AD142B53D41DDE73718 /* AzimuthalEquidistant.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AzimuthalEquidistant.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/AzimuthalEquidistant.hpp; sourceTree = SOURCE_ROOT; };
 		7A2F72E0053AF92CA89646B0 /* Config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Config.h; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/Config.h; sourceTree = SOURCE_ROOT; };
@@ -267,6 +294,7 @@
 		8CCE8CDCDBEA17C02AEB2821 /* MGRS.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MGRS.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/MGRS.hpp; sourceTree = SOURCE_ROOT; };
 		8F0C12A742310031AFEA1AEE /* Geoid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Geoid.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/Geoid.cpp; sourceTree = SOURCE_ROOT; };
 		8F3DF41CC44878753F29BDE5 /* Interval.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Interval.cpp; path = ../../../addons/ofxTime/libs/ofxTime/src/Interval.cpp; sourceTree = SOURCE_ROOT; };
+		904CD301F7BB14F91235B2E8 /* ofxAnimatableOfPoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatableOfPoint.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatableOfPoint.cpp; sourceTree = SOURCE_ROOT; };
 		907C5B5E104864A2D3A25745 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../../addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
 		910A940620FCFDF8E5204E2D /* TleException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TleException.h; path = ../../../addons/ofxSatellite/libs/libsgp4/TleException.h; sourceTree = SOURCE_ROOT; };
 		91F91C3BEAD0B3C2B92BB9A5 /* DofAltPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DofAltPass.cpp; path = ../../../addons/ofxPostProcessing/src/DofAltPass.cpp; sourceTree = SOURCE_ROOT; };
@@ -276,11 +304,12 @@
 		952722E4A543D026C6F325F0 /* SphericalHarmonic.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SphericalHarmonic.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/SphericalHarmonic.hpp; sourceTree = SOURCE_ROOT; };
 		9604B925D32EE39065747725 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../../addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
 		989D23575775E2C5ADC362EA /* DMS.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DMS.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/DMS.hpp; sourceTree = SOURCE_ROOT; };
+		9A420E2B120502E618A931B1 /* ofxBumpShader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBumpShader.h; path = ../../../addons/ofxBumpShader/src/ofxBumpShader.h; sourceTree = SOURCE_ROOT; };
 		9AACF31BAE533E8F81AD4043 /* LUTPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LUTPass.h; path = ../../../addons/ofxPostProcessing/src/LUTPass.h; sourceTree = SOURCE_ROOT; };
 		9CD816E4BB7C54734CB15092 /* Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Util.h; path = ../../../addons/ofxSatellite/libs/libsgp4/Util.h; sourceTree = SOURCE_ROOT; };
 		A02F6AE9937FBEA7EE78DD4C /* UTMUPS.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UTMUPS.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/UTMUPS.hpp; sourceTree = SOURCE_ROOT; };
 		A1473352A9F69ADEBA7D7DF5 /* CassiniSoldner.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CassiniSoldner.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/CassiniSoldner.hpp; sourceTree = SOURCE_ROOT; };
-		A3B189BC1AFCF07200B2FA5A /* ofxCenteredTrueTypeFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxCenteredTrueTypeFont.h; sourceTree = "<group>"; };
+		A3804FDF1B0A7751003A2131 /* SyphonNameboundClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyphonNameboundClient.m; path = ../../../addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.m; sourceTree = "<group>"; };
 		A551A63C96F598937AC720F1 /* OrbitalElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OrbitalElements.h; path = ../../../addons/ofxSatellite/libs/libsgp4/OrbitalElements.h; sourceTree = SOURCE_ROOT; };
 		A907241C60BAF3A70633D1A2 /* Math.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Math.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/Math.hpp; sourceTree = SOURCE_ROOT; };
 		AA203E8E5A958F9BA46F6478 /* CoordGeodetic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = CoordGeodetic.cpp; path = ../../../addons/ofxSatellite/libs/libsgp4/CoordGeodetic.cpp; sourceTree = SOURCE_ROOT; };
@@ -328,6 +357,7 @@
 		D36B7BA863C7D8ADE8C59D56 /* TimeSpan.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TimeSpan.h; path = ../../../addons/ofxSatellite/libs/libsgp4/TimeSpan.h; sourceTree = SOURCE_ROOT; };
 		D41ED8C8083845703AA1FDFA /* BloomPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BloomPass.cpp; path = ../../../addons/ofxPostProcessing/src/BloomPass.cpp; sourceTree = SOURCE_ROOT; };
 		D43B3FC985D6ED5C9FECE758 /* UTM.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UTM.h; path = ../../../addons/ofxGeo/libs/UTM/include/UTM/UTM.h; sourceTree = SOURCE_ROOT; };
+		D58DCB2C0AEFDE6171E29540 /* Syphon.framework */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = wrapper.framework; name = Syphon.framework; path = ../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework; sourceTree = "<group>"; };
 		D6229C1F356AA8E05A91872D /* AlbersEqualArea.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AlbersEqualArea.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/AlbersEqualArea.hpp; sourceTree = SOURCE_ROOT; };
 		D77B928517B3103255756717 /* Accumulator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Accumulator.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/Accumulator.cpp; sourceTree = SOURCE_ROOT; };
 		D8404E8449692E26259F0655 /* GeoUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GeoUtils.cpp; path = ../../../addons/ofxGeo/libs/ofxGeo/src/GeoUtils.cpp; sourceTree = SOURCE_ROOT; };
@@ -359,6 +389,7 @@
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E547AB568F5E5027A880C47C /* ToonPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ToonPass.cpp; path = ../../../addons/ofxPostProcessing/src/ToonPass.cpp; sourceTree = SOURCE_ROOT; };
+		E723BEF4C55D236E24639608 /* ofxSyphonServerDirectory.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxSyphonServerDirectory.mm; path = ../../../addons/ofxSyphon/src/ofxSyphonServerDirectory.mm; sourceTree = SOURCE_ROOT; };
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
@@ -374,6 +405,7 @@
 		F43C8904807C0F81956584EF /* ofRectangled.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofRectangled.cpp; path = ../../../addons/ofxGeo/src/ofRectangled.cpp; sourceTree = SOURCE_ROOT; };
 		F481015F8DF34314A3134B24 /* GravityModel.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GravityModel.hpp; path = ../../../addons/ofxGeo/libs/GeographicLib/include/GeographicLib/GravityModel.hpp; sourceTree = SOURCE_ROOT; };
 		F5DB1AC24B8010FC3C556AAC /* RenderPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RenderPass.h; path = ../../../addons/ofxPostProcessing/src/RenderPass.h; sourceTree = SOURCE_ROOT; };
+		F7CFEE77982205D3F1496C03 /* ofxAnimatable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAnimatable.cpp; path = ../../../addons/ofxAnimatable/src/ofxAnimatable.cpp; sourceTree = SOURCE_ROOT; };
 		F7D41CEA2BBF0144323BF9E9 /* GeoCoords.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GeoCoords.cpp; path = ../../../addons/ofxGeo/libs/GeographicLib/src/GeoCoords.cpp; sourceTree = SOURCE_ROOT; };
 		F98D3119B492CAFA65819DDA /* ContrastPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ContrastPass.h; path = ../../../addons/ofxPostProcessing/src/ContrastPass.h; sourceTree = SOURCE_ROOT; };
 		F9E69702DE151AD76690D1CF /* NoiseWarpPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NoiseWarpPass.h; path = ../../../addons/ofxPostProcessing/src/NoiseWarpPass.h; sourceTree = SOURCE_ROOT; };
@@ -390,6 +422,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3804FDE1B0A767B003A2131 /* Syphon.framework in Frameworks */,
 				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
 				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
@@ -436,6 +469,15 @@
 			name = include;
 			sourceTree = "<group>";
 		};
+		05D0AACA512A0BA85912641C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				500265DA157B1C9756521C28 /* ofxBumpShader.cpp */,
+				9A420E2B120502E618A931B1 /* ofxBumpShader.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		07675191E5CBBF4211173C08 /* ofxGeo */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +519,14 @@
 				2F615CEE50F03C98EE5F0999 /* Utils.cpp */,
 			);
 			name = src;
+			sourceTree = "<group>";
+		};
+		2317994671CD76BBA16927B8 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				65F3085962B3A8825746C3C2 /* Syphon */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 		262E56C22936A7DC64237E39 /* libsgp4 */ = {
@@ -539,6 +589,29 @@
 			name = ofxGui;
 			sourceTree = "<group>";
 		};
+		49A9E39C52C2DF4DDA1E185F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0FB83AC7747296DD35C1C295 /* ofxSyphon.h */,
+				01FAC3552E00C3620035EA2F /* ofxSyphonClient.h */,
+				03EA4DA95B5E1B8409FC058E /* ofxSyphonClient.mm */,
+				46BBCC26D60B589958BF0D03 /* ofxSyphonServer.h */,
+				32D6F27DC6308427F9A278C1 /* ofxSyphonServer.mm */,
+				337B812806A0E7D26A029E5A /* ofxSyphonServerDirectory.h */,
+				E723BEF4C55D236E24639608 /* ofxSyphonServerDirectory.mm */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		50EAFB5FF7C5722E7B4895C7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A3804FDF1B0A7751003A2131 /* SyphonNameboundClient.m */,
+				71FFD50EA75BCC76F0C58D12 /* SyphonNameboundClient.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		53C34BCD002BC70260084CA6 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +654,14 @@
 			name = ofx;
 			sourceTree = "<group>";
 		};
+		65F3085962B3A8825746C3C2 /* Syphon */ = {
+			isa = PBXGroup;
+			children = (
+				50EAFB5FF7C5722E7B4895C7 /* src */,
+			);
+			name = Syphon;
+			sourceTree = "<group>";
+		};
 		673C542C90F960253390265E /* ofxSatellite */ = {
 			isa = PBXGroup;
 			children = (
@@ -588,6 +669,14 @@
 				5DED4E43304C2A8C5DAE6026 /* libs */,
 			);
 			name = ofxSatellite;
+			sourceTree = "<group>";
+		};
+		6BFFDE8BFF87CE6C88E5A08D /* ofxBumpShader */ = {
+			isa = PBXGroup;
+			children = (
+				05D0AACA512A0BA85912641C /* src */,
+			);
+			name = ofxBumpShader;
 			sourceTree = "<group>";
 		};
 		6C9AF35F1A9916752055A0F3 /* libs */ = {
@@ -622,6 +711,23 @@
 				B93E3253E66E6B282C408B7C /* nanoflann.hpp */,
 			);
 			name = include;
+			sourceTree = "<group>";
+		};
+		7F3C04577424427D348B1425 /* ofxSyphon */ = {
+			isa = PBXGroup;
+			children = (
+				49A9E39C52C2DF4DDA1E185F /* src */,
+				2317994671CD76BBA16927B8 /* libs */,
+			);
+			name = ofxSyphon;
+			sourceTree = "<group>";
+		};
+		8D83D7AC476703EBECC1932D /* ofxAnimatable */ = {
+			isa = PBXGroup;
+			children = (
+				B8118C79E563998DA9D23B17 /* src */,
+			);
+			name = ofxAnimatable;
 			sourceTree = "<group>";
 		};
 		90F390D37066E2DCA34E5CE7 /* src */ = {
@@ -737,6 +843,21 @@
 			name = ofxSpatialHash;
 			sourceTree = "<group>";
 		};
+		B8118C79E563998DA9D23B17 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F7CFEE77982205D3F1496C03 /* ofxAnimatable.cpp */,
+				36B9B6CD565C4C6A5BE96680 /* ofxAnimatable.h */,
+				1C9E4AC6CF4626BA74F7E994 /* ofxAnimatableFloat.cpp */,
+				6C6A6CF2AD309C3B58922071 /* ofxAnimatableFloat.h */,
+				777D89F9EECAC3FE2405D5D1 /* ofxAnimatableOfColor.cpp */,
+				5A6936A5770BEB310F3826AD /* ofxAnimatableOfColor.h */,
+				904CD301F7BB14F91235B2E8 /* ofxAnimatableOfPoint.cpp */,
+				5FCA34E402E9C3A0C48F9FA9 /* ofxAnimatableOfPoint.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +867,9 @@
 				6F8AB0A4B467ADD4AFCB478C /* ofxSpatialHash */,
 				E580DA17DAC1E2210AA6BB6A /* ofxTime */,
 				BD52EC6DCE402D90869A80A1 /* ofxPostProcessing */,
+				6BFFDE8BFF87CE6C88E5A08D /* ofxBumpShader */,
+				8D83D7AC476703EBECC1932D /* ofxAnimatable */,
+				7F3C04577424427D348B1425 /* ofxSyphon */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -767,6 +891,7 @@
 				E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */,
 				E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */,
 				E7E077E715D3B6510020DFD4 /* QTKit.framework */,
+				D58DCB2C0AEFDE6171E29540 /* Syphon.framework */,
 			);
 			name = "system frameworks";
 			sourceTree = "<group>";
@@ -987,7 +1112,7 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				431F4292EC184BFE7739E784 /* objectSwarm.cpp */,
 				4EE18035BB53E25EAE08ACC5 /* objectSwarm.h */,
-				A3B189BC1AFCF07200B2FA5A /* ofxCenteredTrueTypeFont.h */,
+				3252684B51C2D2D9C7749C7A /* ofxCenteredTrueTypeFont.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1147,6 +1272,7 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				A3F8ACF196A159405FD9660A /* objectSwarm.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
+				A3804FE01B0A7751003A2131 /* SyphonNameboundClient.m in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
@@ -1239,6 +1365,14 @@
 				813E52BD790CE4AAF527DCD4 /* ToonPass.cpp in Sources */,
 				898CB0955CB42FEB5D750A5C /* VerticalTiltShifPass.cpp in Sources */,
 				D752EB8BA905C25F5E7F2B30 /* ZoomBlurPass.cpp in Sources */,
+				E2264978BB6BCC634F6422C4 /* ofxBumpShader.cpp in Sources */,
+				52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */,
+				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
+				74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */,
+				BC054B7D3B48B395B1D87F2E /* ofxAnimatableOfPoint.cpp in Sources */,
+				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
+				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
+				11DF9AB1B4EAA63E3B190CA0 /* ofxSyphonServerDirectory.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1317,7 +1451,28 @@
 					../../../addons/ofxPostProcessing/src,
 					../../../addons/ofxBumpShader/libs,
 					../../../addons/ofxBumpShader/src,
+					../../../addons/ofxAnimatable/libs,
+					../../../addons/ofxAnimatable/src,
 					src,
+					../../../addons/ofxSyphon/libs,
+					../../../addons/ofxSyphon/libs/Syphon,
+					../../../addons/ofxSyphon/libs/Syphon/lib,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Headers,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Resources,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Resources/English.lproj,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Headers,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Resources,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Resources/English.lproj,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current/Headers,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current/Resources,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current/Resources/English.lproj,
+					../../../addons/ofxSyphon/libs/Syphon/src,
+					../../../addons/ofxSyphon/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -1394,7 +1549,28 @@
 					../../../addons/ofxPostProcessing/src,
 					../../../addons/ofxBumpShader/libs,
 					../../../addons/ofxBumpShader/src,
+					../../../addons/ofxAnimatable/libs,
+					../../../addons/ofxAnimatable/src,
 					src,
+					../../../addons/ofxSyphon/libs,
+					../../../addons/ofxSyphon/libs/Syphon,
+					../../../addons/ofxSyphon/libs/Syphon/lib,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Headers,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Resources,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Resources/English.lproj,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Headers,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Resources,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Resources/English.lproj,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current/Headers,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current/Resources,
+					../../../addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/Current/Resources/English.lproj,
+					../../../addons/ofxSyphon/libs/Syphon/src,
+					../../../addons/ofxSyphon/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -1414,6 +1590,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/Users/dario/Documents/openFrameworks/addons/ofxSyphon/libs/Syphon/lib/osx,
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1487,6 +1664,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1500,6 +1678,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/Users/dario/Documents/openFrameworks/addons/ofxSyphon/libs/Syphon/lib/osx,
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1572,6 +1751,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

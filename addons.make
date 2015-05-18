@@ -5,3 +5,5 @@ ofxSpatialHash
 ofxTime
 ofxPostProcessing
 ofxBumpShader
+ofxAnimatable
+ofxSyphon
